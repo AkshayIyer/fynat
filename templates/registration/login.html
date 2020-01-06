@@ -9,5 +9,10 @@
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit">Login</button>
+  <div class="border-top pt-4">
+    <small class ="text-muted">
+        Don't have an account? No worries, click here: <a class="ml-2" href=/accounts/signup>Sign up</a>
+    </small>
+</div>
 </form>
 {% endblock %}
